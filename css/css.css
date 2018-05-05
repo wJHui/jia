@@ -1,0 +1,610 @@
+#nav{ padding-top: 14px; padding-bottom: 14px; }
+#nav a{ display: block; }
+#nav p{ font-size: 1.4rem; line-height: 26px; color: #666; }
+#nav img{ display: inline-block; max-width: 90%; }
+.clear:after{ content: ''; display: block; clear: both; }
+.ell{ display: block;  overflow: hidden; white-space:nowrap;  text-overflow: ellipsis; }
+body{ padding-bottom: 50px; }
+a:active, a:hover{ text-decoration: none; }
+.subHead{ position: fixed; top: 0; width: 100%; left: 0; z-index: 500; }
+#banner{ width: 100%; overflow: hidden; position: relative; }
+#banner div.swiper-pagination{ width: 100% !important; }
+#banner div.swiper-wrapper{ width:1000%; }
+#banner div.swiper-slide{ width: 10%; float: left; }
+input, button{ outline: none; }
+#hotNews{ border-top: 1px solid #f7f7f7; border-bottom: 5px solid #f7f7f7; padding: 10px 15px; line-height: 38px; }
+.hnTitle{ width: 30%; }
+.hnTitle img{ display: inline-block; }
+.hotNewsLists{ width: 66%; height: 36px; line-height: 36px; overflow: hidden; margin-top: 1px; }
+.hotNewsLists a{ font-size: 1.4rem; color: #666; }
+.itemTitle{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 8px 15px; }
+.bl{ display: block !important; }
+.itemLeft h4{ font-size: 1.8rem; line-height: 32px; margin: 0; display: inline-block; }
+.itemLeft h4 span{ color: #ff2150; }
+.itemLeft h6{ line-height: 32px; font-size: 1.4rem; color: #666; display: inline-block; margin: 0 0 0 10px; }
+.transition{ -webkit-transition:all .2s ease-in; -moz-transition:all .2s ease-in; transition:all .2s ease-in; transform: translate3d(0,0,0); }
+.moreBtn{ font-size: 1.6rem; line-height: 22px; margin-top: 5px; display: inline-block; }
+
+.xsqgLists{ width: 100%; overflow: hidden; }
+.xsqgList{ width: 1000%;  }
+.xsqgList > div{ width: 2.5%; }
+.xsqgList > div a{ display: block; padding: 12px 6px; }
+.xsqgList > div p{ font-size: 1.2rem; color: #666; margin-top: 10px; }
+
+
+
+.ad{ padding: 10px 0; background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.lists1, .lists2, .lists3{ border-bottom: 1px solid #eee; padding-bottom: 10px; background: #f7f7f7;  }
+.lists1 > div, .lists2 > div{ width: 50%; box-sizing: border-box; }
+.lists1-left{ border-right: 1px solid #eee; }
+.lists1-left div, .lists2-left{ border-bottom: 1px solid #eee; }
+.lists1-right div, .lists2-right div{ width: 50%; box-sizing: border-box; border-bottom: 1px solid #eee; border-left: 1px solid #eee; }
+
+.lists3 > div{ width: 25%; border-bottom: 1px solid #eee; border-left: 1px solid #eee; }
+.lists3 > div:first-child{ border-left-color: transparent; }
+
+.likeList{ padding-top: 15px; /* padding-bottom: 4px; border-bottom: 1px solid #eee; */ }
+/* .likeList:nth-of-type(odd){ border-right: 1px solid #eee; }
+.likeList:nth-of-type(even){ border-left: 1px solid transparent; } */
+.likeList h4{ font-size: 1.4rem; line-height: 22px; color: #555; margin-bottom: 4px; }
+.likeList p{ font-size: 1.8rem; color: #ff2150; margin-bottom: 2px;}
+.likeList p del{ font-size: 1.4rem; color: #999; }
+/* #youLike{ margin-bottom: 20px; } */
+
+.footerNav{ padding: 8px 0 0 0; font-size: 1rem; }
+.footerNav a{  color: #333; }
+#footer{ border-top: 1px solid #eee; background: #fff; }
+.footerNav p{ margin-bottom: 4px; }
+
+/* 分类页 */
+.classSearch{ padding-top: 12px; padding-bottom: 12px; background: #fff; position: relative; z-index: 10; border-bottom: 1px solid #dddddd; line-height: 32px; height: 57px; overflow: hidden; }
+.classSearch > div{ padding: 0;  }
+
+.goback{ font-family: '黑体'; display: block; text-align: center; line-height: 32px; font-size: 1.6rem; color: #333; font-weight: 600; }
+#search form{ width: 100%; }
+#search input{ width: 100%; border: none; background: #f7f7f7; border-radius: 4px; padding: 0 10px; font-size: 1.2rem; color: #999999; }
+#search input::-webkit-input-placeholder{ color: #999999; }
+.inputclear{ display: block; font-size: 1.3rem; color: #666; text-align: center;  }
+
+.class-left{ padding: 0; height: calc(100vh - 109px); overflow-x: hidden; overflow-y: scroll; position: relative; background: #f7f7f7; }
+.class-left:after{ content: ''; display: block; width: 1px; height: 100%; background: #ddd; top: 0; right: 0; position: absolute; }
+.classNav div{  border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; z-index: 10; position: relative; z-index: 10; line-height: 46px; text-align: center; }
+.classNav div a{ display: block; font-size: 1.4rem; color: #333333; }
+.classNav div.cur a{ color: #ff2150; }
+.classNav div.cur{ background: #fff; border-right: 1px solid #fff; }
+
+.class-right{ padding: 0 8px; overflow-y: scroll; height: calc(100vh - 109px); }
+.class-right .ad2{ margin: 10px 0; }
+.classTitle{ font-size: 1.3rem; color: #ff2150; margin: 15px 0; }
+.classList{ padding: 6px; }
+.classList p{ font-size: 1.2rem; color: #333; margin-top: 4px; }
+
+
+/* 筛选产品页 */ 
+.filterPor{ transform: translateY(0); z-index: -1; /*position: relative; border-bottom: 1px solid #ddd;*/ box-shadow: 0 1px 2px rgba(0,0,0,.2); background: #fff; height: 50px; overflow: hidden; }
+.fP{ width: 20%; text-align: center; line-height: 50px; position: relative; }
+.fP a{ color: #999999; font-size: 1.4rem; display: block; }
+.fP.cur{ position: relative; }
+.fP.cur a{ color: #ff2150; }
+.filterPor .filterBar{ display: block; height: 2px; width: 20%; background: #ff2150; position: absolute; left: 0; margin: 0; bottom: 0px; }
+
+.filterLists{ margin-top: 20px; margin-bottom: 20px; }
+.filterList{ padding: 0 8px; margin-bottom: 8px; }
+.filterList > div{ background: #fff; padding-bottom: 6px; }
+.filterList h4{ font-size: 1.3rem; color: #333; margin: 10px 6px; }
+.filterList p{ margin-left: 6px; margin-right: 6px; }
+.filterList p b{ font-size: 1.5rem; font-weight: 400; color: #ff2150; }
+.filterList p small{ color: #ccc; font-size: 1.2rem; }
+
+/*店铺列表*/
+
+.dianpuWrap{ margin-top: 15px; }
+.dianpuList{ border: 1px solid #eeeeee; margin-bottom: 10px;  border-left: none; border-right: none; padding: 15px; background: #fff; }
+.dainpuTop{ position: relative; padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid #eee; }
+.dianpuImg{ margin-right: 10px; width: 50px; }
+.dianpuTitle h4{ margin-top: 6px; margin-bottom: 8px; font-size: 1.4rem; color: #333; }
+.dianpuTitle p{ margin: 0; color: #999999; font-size: 1.2rem; font-weight: 100; }
+.dianpuA{ font-size: 1.2rem; line-height: 22px; padding: 0 6px; border: 1px solid #999; color: #999; position: absolute; top: 50%; margin-top: -12px; right: 15px; border-radius: 4px; }
+.dianpuA:hover{ color: #ff2150; }
+.dianpuImgList{ margin: 0 11px; padding: 0; }
+.dianpuIL{ padding: 0 4px; }
+
+.dianpuIL a{ position: relative; display: block; width: 100%; height: 100%; }
+.dianpuIL p{ display: inline-block; font-size: 1.2rem; color: #fff; position: absolute; margin: 0; line-height: 24px; padding: 0 10px; background: rgba(0,0,0,.6); bottom: 0; right: 0; }
+
+/* 店铺详情 */
+.dot{ text-align: center; display: block; }
+.dot span{ display: inline-block; width: 5px; height: 5px; background: #333333; border-radius: 50%; }
+
+#dianTop{ position: relative; height: 184px; background: url(../img/dianbg.jpg) no-repeat center center; background-size: cover; }
+.dianTopInfo{ position: absolute; width: 100%; left: 0; bottom: 0; padding: 15px 20px; }
+
+.dianTopInfo h3{ font-size: 1.8rem; margin: 6px 0 10px; color: #666; }
+.dianTopInfo p{ font-size: 1.4rem; color: #666; font-weight: 400; }
+.dianName{ margin-left: 10px; }
+.cang{ font-size: 1.2rem; line-height: 28px; position: absolute; top: 50%; right: 15px; margin-top: -14px; background: #ff2150; padding: 0 12px; color: #fff; border-radius: 4px; }
+.dianNav{ padding-top: 10px; padding-bottom: 10px; background: #fff; border-bottom: 1px solid #eaeaea; }
+.dianNav > div{ margin: 0; text-align: center; position: relative; }
+.dianNav > div:not(:first-child){ border-left: 1px solid #eaeaea; }
+.dianNav > div.cur:after{ content: ''; display: block; width: 100%; height: 2px; position: absolute; left: 0; bottom: -11px; background: #ff2150; }
+.dianNav > div.cur p{ color: #ff2150;  }
+.dianNav b{ line-height: 26px; display: block; height: 26px; font-size: 1.8rem; font-weight: 500; color: #444; }
+.dianNav p{ font-size: 1.2rem; color: #444; margin-bottom: 0px; }
+
+.dian-info-list{ background: #fff; border-bottom: 1px solid #eee; }
+.dian-info-list .col-xs-4{ padding-left: 0; padding-right: 6px; }
+.dian-info-list > div:not(:last-child){ border-bottom: 1px solid #eeeeee; }
+.dian-info-list > div{  padding: 6px 0; line-height: 38px; font-size: 1.3rem; }
+.dian-info-list span{ display: inline-block; text-align: center; background: #ff2150; color: #fff; font-size: 1rem; line-height: 16px; width: 16px; margin-left: 4px; vertical-align: middle; }
+.dian-info-list p{ font-size: 1.3rem; margin-bottom: 0; }
+
+/* 快递页 */
+.kdInfoLists{ position: relative; margin-top: 20px; }
+.kdInfoLists:after{ width: 1px; height: 100%; position: absolute; top: 2px; left: calc((100% + 30px ) / 12 - 15px); content: ''; display: block; background: #eee; }
+.kd{ border-bottom: 1px solid #eee; padding: 4px 0; }
+.kd h4{ font-size: 1.4rem; color: #333; padding: 0 2px; }
+
+.kdInfo > h3{ font-size: 1.4rem; color: #333; }
+.kdMessage > div{ font-size: 1.2rem; margin-bottom: 10px; color: #999; line-height: 22px; padding-bottom: 16px;}
+
+.kdMessage b{ font-weight: 400; font-size: 1.3rem; margin-bottom: 8px; } 
+.kdInfoLists div.cur .kdMessage b,.kdInfoLists div.cur .kdMessage p{ color: #7bb008; }
+.kdIcon{ position: relative; }
+.kdIcon:after{ width: 10px; height: 10px; border-radius: 50%; z-index: 4; background: #ccc; position: absolute; top: 4px; left: 50%; margin-left: -5px; content: ''; display: block; }
+.kdInfoLists div.cur .kdIcon:after{ background: #7bb008; }
+.kdInfoLists div.cur .kdIcon:before{ background: #bdd783; width: 14px; height: 14px; top: 2px; left: 50%; margin-left: -7px; content: ''; display: block; position: absolute; border-radius: 50%; z-index: 2; }
+
+.messageClass{ padding: 15px 0; border-bottom: 1px solid #eee; margin: 0 10px; }
+.messageClass > div:first-child{ padding-left: 0; }
+.messageClass > div:last-child{ padding-left: 0; padding-right: 0; }
+.messageClass h4{ display: inline-block; margin: 0; font-size: 1.6rem; }
+.messageClass span{ font-size: 1.3rem; color: #ccc; }
+.messageClass p{ margin-top: 4px; font-size: 1.3rem; color: #ccc; margin-bottom: 0; }
+
+/* 评价页面 */
+.pjWrap{ margin: 20vh 0; }
+.pjIco{ width: 120px; height: 120px; margin: 0 auto 20px; }
+.pjText{ font-size: 1.7rem; line-height: 32px; color: #333; }
+.pjText p{ margin-bottom: 0; }
+
+/* 晒单页 */
+.shaidanInfo{ margin: 10px 0;}
+.shaidanInfo div:first-child{ width: 80px; height: 80px; }
+.shaidanInfo div:last-child{ width: calc(100% - 100px); margin: 0 10px; position: relative; height: 80px; }
+.shaidanInfo h4{ font-size: 1.5rem; color: #444; margin: 6px 0 8px 0; }
+.shaidanInfo p{ font-size: 1.3rem; color: #999; }
+.shaidanInfo b{ font-size: 1.8rem; color: #ff2150; position: absolute; right: 0; bottom: 0; font-weight: 400; }
+.shaidanRemark{ font-size: 1.6rem; }
+
+.shaidanTop{ margin-bottom: 16px; }
+.shaidanContent{ width: 100%; height: 120px;  }
+.shaidanContent textarea{ display: block; width: 100%; height: 100%; max-height: 100%; background: #fafafa; max-width: 100%; min-height: 100%; min-width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding: 6px; font-size: 1.3rem; line-height: 22px; color: #333; }
+
+.phone.row{margin:0 -2px; margin: 10px 0; }
+.phone > div{ padding: 0 2px; }
+
+.start{ /*border-top: 10px solid #fafafa;*/ margin: 20px -15px 0; }
+.startList{ padding: 6px 15px; line-height: 30px; font-size: 1.4rem; color: #666; }
+.start .startList:first-child{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.bottomBtn a{ width: 100%; display: block; text-align: center; line-height: 40px; background: #ff2150; color: #fff; font-size: 1.6rem; }
+
+/* 订单页 */
+.orderNav{ background: #fff; position: relative; }
+.orderNav div{ line-height: 40px; padding: 4px 0; text-align: center; font-size: 1.3rem; color: #333; position: relative; }
+.orderNav div.cur{ color: #f00; }
+.orderNav .filterBar{ display: block; width: 25%; height: 2px; background: #f00; position: absolute; left: 0; bottom: 0; margin: 0; }
+
+.orderLists{ margin: 0 -8px; }
+.orderList{ background: #fff; border-radius: 4px; border: 1px solid #eee; margin-top: 8px; padding: 10px 0 0; }
+.orderTop{ border-bottom: 1px solid #eee; padding: 0 10px; font-size: 1.3rem; color: #ff2150; line-height: 30px; padding-bottom: 10px; }
+.orderTop a{ color: #333; }
+.orderMiddle{ padding: 10px;}
+.orderImg{ width: 70px; height: 70px; }
+.orderInfo{ width: calc(80% - (70px * .8) - 10px); margin: 0 5px; }
+.orderInfo h4{ margin: 0 0 6px; font-size: 1.3rem; line-height: 22px; }
+.orderInfo p{ margin-bottom: 0; font-size: 1.3rem; color: #999;}
+.orderJq{ width:  calc(20% - (70px * .2)); text-align: right; }
+.orderJq del, .orderJq p{ font-size: 1.3rem; color: #999999; margin: 0; }
+.orderJq h5{ font-size: 1.5rem; color: #444; margin: 8px 0; }
+
+.orderBottomLists{ padding: 6px 10px; line-height: 34px; text-align: right; border-top: 1px solid #eee; color: #999; font-size: 1.4rem; }
+.orderBottomLists span{ color: #ff2150; }
+.orderBottomLists a{ background: #ff2150; border-radius: 4px; margin-left: 6px; border: 1px solid #ff2150; font-size: 1.3rem; display: inline-block; line-height: 28px; padding: 0 12px; color: #fff; }
+a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
+
+/* 待付款页 */
+.daiTop{ height: 150px; background: url(../img/dai.jpg) no-repeat center center; background-size: cover; }
+.daiTop h4, .daiTop p{ margin: 0;  }
+.daiTop h4{ line-height: 50px; font-size: 2.3rem; padding: 50px 15px 10px; color: #fff; }
+.daiTop p{ font-size: 1.4rem; color: #fff; padding: 0 15px; }
+
+.daiInfo{ padding: 10px 15px; background: #fff; border-bottom: 1px solid #eee; }
+.daiInfo .daiInfoList:first-child{ padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #eee; }
+.daiInfoIco{ width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -15px; left: 4px;}
+.daiInfoMain{ width: calc(100% - 30px); }
+.daiInfoMain h4{ font-size: 1.5rem; color: #333; margin: 4px 0; line-height: 22px; }
+.daiInfoMain p{ font-size: 1.3rem; color: #999999; margin: 2px 0; line-height: 20px; }
+.daiInfoMore{ width: 20px; line-height: 52px; }
+/*.daiInfo div.daiInfoList:first-child{ border-bottom: 1px solid #eee; }*/
+.daiInfoList{ padding-left: 46px; position: relative; }
+.red h4{ color: #7bb008; }
+
+.daiOrderLists{ background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding:0 10px; margin-top: 15px; }
+
+
+.daiorderList{ background: #fff; border-radius: 4px; border: none; margin-top: 0px; padding: 10px 0 0; }
+.daiorderTop{ border-bottom: 1px solid #eee; padding: 0 10px; font-size: 1.3rem; color: #999; line-height: 30px; padding-bottom: 10px; }
+.daiorderTop a{ color: #333; }
+.daiorderMiddle{ padding: 10px; border-bottom: 1px solid #eee;}
+.daiorderImg{ width: 60px; height: 60px; }
+.daiorderInfo{ width: calc(80% - (70px * .8) - 10px); margin: 0 5px; }
+.daiorderInfo h4{ margin: 0 0 2px; font-size: 1.3rem; line-height: 24px; }
+.daiorderInfo p{ margin-bottom: 0; font-size: 1.2rem; color: #999;}
+.daiorderJq{ width:  calc(20% - (70px * .2)); text-align: right; }
+.daiorderJq del, .orderJq p{ font-size: 1.3rem; color: #999999; margin: 0; }
+.daiorderJq h5{ font-size: 1.6rem; color: #444; margin: 8px 0; }
+
+.daiorderBottomLists{ padding: 6px 10px; line-height: 34px; border-bottom: 1px solid #eee; color: #999; font-size: 1.3rem; }
+.daiorderBottomLists span{ color: #666; }
+.daiorderBottomLists a{ background: #ff2150; border-radius: 4px; margin-left: 6px; border: 1px solid #ff2150; font-size: 1.3rem; display: inline-block; line-height: 28px; padding: 0 12px; color: #fff; }
+
+.daiUserOrderInfi{ padding: 10px; font-size: 1.2rem; color: #999; line-height: 28px;  }
+.daiUserOrderInfi p{ margin-bottom: 0; }
+.bottomBtn .daiButtonRight{ width: 26%; line-height: 60px; height: 60px; }
+.daiButtonLeft{ width: 74%; line-height: 60px; height: 60px; padding-left: 12px; }
+.daiBottomBtn{ height: 60px; }
+
+.daiButtonLeft h5{ margin: 6px 10px 2px; line-height: 24px; font-size: 1.2rem; color: #666; }
+.daiButtonLeft p{ margin: 2px 10px 6px; line-height: 20px; font-size: 1.2rem; color: #666; }
+.daiButtonLeft strong{ font-size: 1.5rem; font-weight: 500; color: #ff2150; }
+
+.yhqLists{ padding-top: 10px; }
+.yhqList{ margin: 10px 0 0 0; background: #fff; border-radius: 4px; overflow: hidden; background: #ff2150; position: relative; }
+.yhqLeft{ width: 55%;  padding: 10px; }
+.yhqLeft p{ font-size: 1.3rem; color: #fff; margin-top: 6px; margin-left: 6px; margin-bottom: 0px; }
+.yhqLeft h5{ font-size: 1.4rem; color: #fff; font-weight: 400; margin-top: 0px; margin-bottom: 0; }
+.yhqLeft h5 b{ font-size: 3.6rem; font-weight: 500; }
+.yhqRight{ width: 45%; padding: 10px 10px; background: #fff; text-align: center; font-size: 1.3rem; color: #999;  line-height: 22px; }
+.yhqRight p{ margin: 0; }
+.yhqMiddle{ width: 6px; height: 100%; position: absolute; top: 0; left: 54.5%;  }
+
+.yhqList.ed{ background: #aaa; color: #eee; opacity: .6; }
+.yhqList.ed .yhqLeft p{ color: #ccc; }
+.yhqList.ed .yhqLeft h5{ color: #ccc; }
+/*.yhqList.ed:after{ content: ''; width: 100px; height: 100%; background: url(../img/ed.png) no-repeat center center; background-size: 94%; position: absolute; display: block; top: 0; left: calc(55% - 50px); }
+*/
+
+.yhqList.ed .yhqMiddle path{ fill:#aaa; }
+
+/* 积分 */
+.jiFen .daiTop{ position: relative; }
+.jiFen .daiTop h4{ font-size: 3rem; padding: 36px 15px 2px; line-height: 34px; }
+.jiFen .daiTop h4 small{ font-size: 1.5rem; color: #fff; }
+.jiFenA{ position: absolute; top: 15px; right: 8px; font-size: 1.3rem; color: #fff;  }
+.jiFenNav{ position: absolute; left: 0; bottom: 0; width: 100%; height: 36px; background: rgba(0,0,0,.5); line-height: 36px; text-align: center; }
+.jiFenNavList{ width: 33.333333333333333333333333333333333%; position: relative; }
+.jiFenNavList:not(:first-child):after{ content: ''; display: block; width: 1px; height: 60%; position: absolute; top: 20%; left: 0; background: rgba(255,255,255,.6); }
+.jiFenNavList a{ display: block; font-size: 1.4rem; color: rgba(255,255,255,.6); }
+
+.jiFenLists{ min-height: 70vh; margin-top: 10px; border-top: 1px solid #eee; background: #fff; padding: 10px; }
+.jiFenList{ padding: 10px 0; border-bottom: 1px solid #ddd; }
+.jiFenImg{ width: 60px;}
+.jiFenTitle{ width: calc(75% - 60px * 0.75); padding: 2px 10px; }
+.jiFenDate{ width: calc(25% - 60px * 0.25);  }
+.jiFenTitle p{ font-size: 1.3rem; margin-top: 4px; color: #333; }
+.jiFenBtn{ display: inline-block; border: 1px solid #ddd; background: #fafafa; font-size: 1.2rem; padding: 0 6px; line-height: 20px; color: #999; border-radius: 2px; }
+.jiFenDate p{ font-size: 1.3rem; color: #666; margin-top: 10px; margin-bottom: 4px; text-align: center; }
+.jiFenDate b{ font-size: 1.6rem; font-weight: 400; text-align: center; display: block; font-size: 1.8rem; }
+
+.userTop{ height: 144px;  overflow: hidden; background-size: cover; display: flex; align-items: center; justify-content: center; flex-direction:column; }
+.userIco{ width: 60px; height: 60px; border-radius: 50%; border: 2px solid #fff; background: #fff; overflow: hidden; }
+.userTitle{ margin-left: 10px; }
+.userTitle h3{ margin: 8px 0 6px; font-size: 1.8rem; color: #fff; }
+.userTitle p{ font-size: 1.4rem; color: #fff; line-height: 24px; }
+.userOrder, .userOrder a{ font-size: 1.5rem; line-height: 34px; padding: 6px 0; color: #333; }
+.userOrder a{ font-size: 1.3rem; color: #666; }
+.userOrder{ border-bottom: 1px solid #eaeaea; }
+.userOne{ background: #fff;  }
+.usrLists{ border-top: 10px solid #f7f7f7;  }
+.userOne a{ font-size: 1.3rem; color: #666;}
+.usrFIco{ width: 30px; height: 30px; margin: 12px auto 6px; }
+.usrFour{ border-bottom: 1px solid #eaeaea; }
+.uL{ border-top: 1px solid #eaeaea; padding: 0 15px; }
+.uL h3{ font-size: 1.6rem; color: #333333; line-height: 50px; margin: 0; }
+.uL a{ display: block; }
+.uL span{ line-height: 50px; font-size: 1.5rem; color: #444; }
+.usrList{ border-bottom: 1px solid #eaeaea; margin-bottom: 10px; background: #fff; }
+
+/* search */
+
+.searchWrap{ margin-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #efefef; }
+.searchIco{ display: flex;  align-items: center; justify-content: center; padding-right: 6px; width: 30px; height: 36px; }
+.searchTitle{ line-height: 36px; font-size: 1.6rem; color: #999; }
+.searchLists{ margin: 10px 0; }
+.searchLists div{ font-size: 1.4rem; line-height: 26px; border: 1px solid #ccc; padding: 0 14px; margin-right: 8px; margin-bottom: 8px; border-radius: 3px; }
+.searchLists div a{ color: #999; }
+
+#xqInfo{ background: #fff; margin: 10px 0 0; padding: 16px 0; border-top: 1px solid #eee; }
+.xqImg{ width: 40%; padding: 0 10px; display: flex; align-items: center; height: 30vw; justify-content: flex-end; }
+.xqInfo{ width: 60%; padding: 0 10px;  display: flex; justify-content: center; height: 30vw; flex-direction: column; }
+.xqImg img{ max-width: 70%; display: inline-block; vertical-align: middle; }
+.xqInfo h3{ margin: 10px 0; font-size: 2rem; color: #ff2150; font-weight: 400; }
+.xqInfo p{ font-size: 1.4rem; margin: 0; color: #ccc; line-height: 22px; }
+
+.syList{ line-height: 36px; font-size: 1.4rem; color: #999; }
+.syIco{ display: flex;  align-items: center; justify-content: center; padding-right: 6px; width: 30px; height: 36px; }
+.syList{ padding: 10px; border-bottom: 1px solid #ddd;position: relative; }
+.syLists{ margin: 10px 0; border-top: 1px solid #ddd; background: #fff; }
+
+.syList.cur:before{ content: ''; display: block;  width: 28px; height: 28px; position: absolute; top: 0; right: 0; background: url(../img/t.png) no-repeat center center; background-size: 100% 100%;  }
+
+.xqBtn{ background: #fff; padding: 10px 0 20px; }
+.xqBtn a{ display: inline-block; line-height: 28px; padding: 0 20px; font-size: 1.3rem; color: #666; background: #f9f9f9; border: 1px solid #eee; border-radius: 4px; margin: 0 10px; }
+.editAdd{ padding: 15px 15px 10px; background: #fff; border-top: 1px solid #eee; }
+#default .editAdd{ border-top: none; }
+
+.addTitle{ font-size: 1.7rem; line-height: 32px; color: #555; }
+.addAdd{ color: #999; font-size: 1.3rem; line-height: 26px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+.addInfo{ margin-top: 6px; color: #999; font-size: 1.3rem; line-height: 38px; }
+.addInfo a{ color: #999; display: inline-block; margin: 0 6px; }
+#default{ padding-bottom: 6px; background: url(../img/rb.jpg) repeat-x center bottom; }
+#addList .editAdd{ margin-top: 10px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.orderWrap{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding:0 15px; padding-bottom: 0; background: #fff; margin-top: 10px; }
+.orderDianpu{ border-bottom: 1px solid #eee; padding: 8px 0;  }
+.orderDianpu img{ max-width: 36px; }
+.orderDianpu span{ line-height: 36px; display: inline-block; margin-left: 10px; font-size: 1.6rem; color: #333; }
+.orderWrap .orderMiddle{ padding: 10px 0; }
+.orderWrap .orderImg{ width: 50px; height: 50px; }
+.orderWrap .orderJq h5{ color: #ff2150; font-size: 1.8rem; }
+.orderWrap .orderJq{ width: calc(24% - (70px * .2)) }
+.orderWrap .orderInfo{ width: calc(76% - (70px * .8) - 20px); margin: 0 10px; }
+
+.orderother .oo{ border-top: 1px solid #eee; padding: 8px 0; line-height: 36px; font-size: 1.5rem; color: #555; }
+.orderother .oo.n{ border-top: none; }
+
+.yhqBtn{ padding: 10px 0 20px; }
+.yhqBtn a{ display: inline-block; line-height: 24px; padding: 0 10px; font-size: 1.3rem; color: #fff; background: #ff2150; border: 1px solid #ff2150; border-radius: 6px; margin: 0 10px; }
+
+
+.catWrap{ margin-top: 10px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; background: #fff; }
+.catDian{ padding: 6px 12px; line-height: 28px; font-size: 1.4rem; color: #333; border-bottom: 1px solid #eee; }
+.catDianName a{ color: #333; }
+.catLists{ padding: 10px; position: relative; }
+.catLists:not(.n){ border-top: 1px dotted #eee; }
+.catLists > div{ padding: 0 2px; }
+
+.catImg{ width: 68px; height: 68px; overflow: hidden; margin-right: 8px; }
+.catInfo{ width: calc(100% - 76px); }
+.catInfo p{ margin-bottom: 0; font-size: 1.3rem; text-align: left; line-height: 20px; }
+.spChange{ margin-top: 4px; }
+.spChange button{ width: 24px; font-weight: bold; height: 24px; text-align: center; font-size: 1.3rem; color: #6b6b6b; background: #f7f7f7; border: none; float: left; }
+.spChange input{ width: 50px; height: 24px; line-height: 24px; font-size: 1.3rem; color: #6b6b6b; background: #f7f7f7; border: none; float: left; display: block; margin: 0 2px; text-align: center; }
+.reduce{ border-radius: 5px 0 0 5px; }
+.plus{ border-radius: 0 5px 5px 0; color: #ff2150 !important; }
+.catC{ color: #999; }
+
+.catRight{ text-align: right; width: 24%; float: left; }
+.catRight del{ color: #999; font-size: 1.4rem; display: block; font-weight: 400; }
+.catRight b{ font-weight: 400; font-size: 1.5rem; color: #ff2150; display: block; }
+
+.catLeft{ width: 20px; height: 20px; position: absolute; top: 50%; margin-top: -10px; left: 10px; }
+.catMiddle{ width: 66%; float: left; margin-left: 30px; }
+
+.bottomBtn a{ width: 100%; display: block; text-align: center; line-height: 40px; background: #ff2150; color: #fff; font-size: 1.6rem; }
+.catBtn .daiButtonLeft, .catBtn .daiButtonRight{ height: 50px; line-height: 50px; }
+.catBtn{ border-bottom: 1px solid #eee; margin: 0 -15px; }
+.catBtn .daiButtonLeft h5{ line-height: 50px; margin: 0; }
+.catBtn .daiButtonLeft h5 span{ color: #999; }
+
+/* 产品详情页 */
+#productSingle{ position: relative; }
+#productSingle div{ display: block; width: 33.3333333333333333333333333333333333333%; float: left; text-align: center; }
+#productSingle div a{ color: #333; font-size: 1.4rem; }
+
+#productSingle p.filterBar{ display: block; width: 33.333333333333333333333333%; height: 2px; background: #ff2150; left: 0; bottom: -12px; position: absolute; margin: 0; }
+#productSingle div.cur a{ color: #ff2150; }
+
+#productImg{ width: 100%; overflow: hidden; position: relative; }
+#productImg .swiper-wrapper{ width: 99999px;  }
+#productImg .swiper-slide{ width: 100vw; float: left; }
+
+.productInfo{ background: #fff; }
+#productTitle{ padding: 8px 15px; font-size: 1.5rem; color: #333; line-height: 24px; font-weight: 400; margin: 0 0 8px 0; }
+.productBlock{ padding: 4px 15px; line-height: 38px; border-bottom: 1px solid #eee; font-size: 1.4rem; color: #666; }
+
+.prosuctJJ{ font-size: 2rem; color: #ff2150; vertical-align: middle; }
+.productAction{ font-size: 1.1rem; color: #fff; margin-left: 12px; display: inline-block; padding: 0 6px; line-height: 22px; background: #ff2150; vertical-align: middle; }
+
+.block{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-top: 10px; padding: 4px 15px; background: #fff; line-height: 38px; }
+
+.PLlist{ padding: 0 0 10px 0; }
+.PLtop{ font-size: 1.3rem; color: #333; line-height: 30px; margin: 8px 0; }
+.PLtop img{ width: 38px; border-radius: 50%; }
+.plMessage{ font-size: 1.4rem; margin: 0; line-height: 26px; color: #666; }
+.plAug{ font-size: 1.2rem; margin:6px 0 0 0; color: #999; line-height: 28px; }
+.productMore a{ display: block; margin-top: 6px; line-height: 34px; font-size: 1.4rem; color: #666;  }
+
+
+.productDian{ padding: 8px 0; }
+.productDianImg{ width: 56px; margin-right: 10px; }
+.productDianInfo h5{ margin: 2px 0; font-size: 1.5rem; line-height: 24px; color: #333; font-weight: bold; }
+.productDianInfo p{ margin: 2px; font-size: 1.3rem; line-height: 24px; color: #999;  }
+
+.dian-btn{ text-align: center; padding: 10px 0; }
+.dian-btn a{ display: inline-block; margin: 0 12px; line-height: 30px; font-size: 1.4rem; color: #666; padding: 0 16px; border: 1px solid #ddd; border-radius: 4px; }
+
+.messageTab{ border-bottom: 1px solid #eee;  }
+.messageTab div{ width: 33.3333333333333333333333333333333333333%; float: left; text-align: center; line-height: 42px; font-size: 1.4rem; color: #333; }
+.messageTab div.on{ color: #ff2150; position: relative; }
+.messageTab div.on:after{ content: ''; display: block; width: 100%; height: 2px; background: #ff2150; position: absolute; left: 0; bottom: 0; }
+
+.pFLeft{ width: 40%; }
+.pFLeft div{ width: 33.3333333333333333333%; text-align: center; }
+#productFooter{ height: 50px; font-size: 1.2rem; color: #666; line-height: 18px; padding: 6px 0; }
+.pFLeft a{ color: #666; }
+
+.pFRight{ text-align: right; }
+.pFRight a{ display: inline-block; margin: 0 4px; font-size: 1.3rem; padding: 0 12px; border: 1px solid #ff2150; border-radius: 4px; line-height: 36px; }
+#addCat{ color: #ff2150; }
+#buyNew{ color: #fff; background: #ff2150;  }
+
+#pChange{ width: 100vw; height: 100vh; transform:translateY(100vh); /*background: rgba(0,0,0,.5);*/ position: fixed; top: 0; left: 0; z-index: 9999; }
+.pChange{ width: 100vw; position: absolute; left: 0; transform: scale(.9); bottom: 0; background: #fff; padding: 10px; box-shadow: 0 -2px 5px rgba(0,0,0,.2) }
+.pChange div.pClose{ width: 16px; height: 16px; position: absolute; top: 10px; right: 10px; z-index: 10; }
+.pCImg{ width: 80px; }
+.pCpro{ margin-left: 20px; }
+.pCpro h3{ font-size: 1.8rem; margin: 0 0 12px; line-height: 30px; color: #ff2150; font-size: 400; }
+
+
+.pCpro p{ font-size: 1.3rem; margin: 0; color: #999; line-height: 20px; padding-left: 4px; }
+.pCpro b{ font-weight: 500; color: #333; }
+
+.pCMiddle{ margin: 12px 0; padding: 20px 0; }
+.pCmBlock{ border-top: 1px solid #eee; margin-bottom: 16px; }
+.pCmBlock h4{ font-size: 1.7rem; line-height: 26px; margin:6px 0 10px; color: #666; margin-left: 2px; }
+.pCmtab span{ display: inline-block; margin-right: 4px; line-height: 26px; margin-bottom: 6px; font-size: 1.3rem; color: #666; padding: 0 10px; background: #eee; border-radius: 4px; }
+.pCmtab span.on{ background: #ff2150; color: #fff; }
+
+.pCchange.spChange button{ width: 34px; height: 34px; }
+.pCchange.spChange input{ width: 60px; height: 34px; line-height: 34px; }
+
+.pCBottom{ margin-top: 30px; }
+.pCBottom a{ display: block; background: #ff2150; line-height: 40px; text-align: center; color: #fff; font-size: 1.6rem; margin: 0 -10px -10px; }
+
+#searchWrap{ width: 100vw; height: 100vh; position: fixed; top: 0; left: 0;  z-index: 9999; transform:translateX(800px); }
+/*#searchWrap.opa{ background: rgba(0,0,0,.5); }*/
+.sw{ width: calc(100vw - 40px); background: #fff; height: 100vh; margin-left: 40px; position: relative; transform: scale(.98); box-shadow: -2px 0 5px rgba(0,0,0,.2); }
+
+.swBlock1{ border-bottom: 1px solid #eee; padding: 8px 15px; font-size: 1.4rem; color: #333; line-height: 28px; }
+.swBlock1 h4{ font-size: 1.4rem; display: inline-block; margin-right: 16px; }
+.swBlock1 span{ color: #ff2150; }
+
+.swBlock2{ border-bottom: 1px solid #eee; padding: 8px 15px; font-size: 1.4rem; color: #333; line-height: 28px; }
+.swBlock2 h4{ font-size: 1.4rem; margin-right: 16px; }
+.swLists{ margin: 4px 0; }
+.swLists span{ display: inline-block; margin:0 4px 0 -1px; padding: 0 14px; border-radius: 3px; line-height: 28px; font-size: 1.3rem; background: #f7f7f7; color: #666; }
+.swLists span.on{ background: #ff2150; color: #fff; }
+
+.swinput{ display: inline-block; font-size: 1.2rem; color: #666; font-weight: 500; }
+.swinput input{ display: inline-block; width: 76px; padding: 0 10px; border-right: 4px; line-height: 28px; border: none; background: #eeeeee; }
+
+.swBottom{ position: absolute; width: 100%; left: 0; bottom: 0; }
+.swBottom a{ display: block; background: #ff2150; line-height: 40px; text-align: center; color: #fff; font-size: 1.6rem; }
+
+
+.form_input{ display: inline-block; line-height: 36px; width: 60vw; font-size: 1.4rem; border: none; background: #fff; padding:0; color: #444; }
+.addLists .syList > div:first-child{ width: 20%; }
+.addLists .syList > div:last-child{ width: 80%; }
+.addMap{ width: 26px; height: 26px; margin-top: 5px; margin-right: 10px; }
+
+.svgI-20{ display: inline-block; width: 20px; height: 20px; line-height: 20px; vertical-align: middle; }
+.svgI{ display: inline-block; vertical-align: middle; }
+
+.tui{ font-size: 1.3rem; color: #666; }
+
+.lazy{ width: 100%; filter: blur(3px); -webkit-transition:filter .2s ease-in; -moz-transition:filter .2s ease-in; transition:filter .2s ease-in; transform: translate3d(0,0,0); }
+
+
+/* 无限加载动画 */
+
+.infinite-scroll-request.spinner {
+  width: 30px;
+  height: 30px;
+ 
+  position: relative;
+  margin: 15px auto;
+
+}
+
+.page-load-status > div{ line-height: 60px; color: #999; font-size: 1.3rem; text-align: center; }
+ 
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+   
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+/* 购物车按钮选中样式 */
+
+
+.cat-custom {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -1px 11px -1px 0;
+	width: 18px; height: 18px; border: 1.5px solid rgb(255, 33, 80); border-radius: 50%;
+}
+
+.cat-custom input[type="checkbox"],
+.cat-custom input[type="radio"]{
+	width: 16px;
+	height: 16px;
+	top: 0;
+	left: 0;
+	display: block;
+	margin: 0;
+	position: absolute;
+	cursor: pointer;
+
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+
+
+/* General SVG and path styles */
+
+.cat-custom svg {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 50%;
+	margin-top: -8px;
+	left: 1px;
+	pointer-events: none;
+}
+
+.cat-custom svg path {
+	stroke: rgb(255, 33, 80);
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+

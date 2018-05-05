@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/ydui.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+		body{ background: #f7f7f7; padding-top: 60px; }
+	</style>
+</head>
+<body>
+<header id="header" class="container subHead">
+	<section class="classSearch row">
+		<div class="col-xs-2" style="padding: 6px 4px;">
+			<a class="" style="display: block; width: 16px; height: 16px; line-height: 16px; margin-left: 6px;" href="javascript:history.go(-1);">
+				<svg  class="icon" width="16px" height="16.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#2c2c2c" d="M710.153924 8.980397L266.007127 460.692524a81.118646 81.118646 0 0 0 0.861532 114.476097l446.192936 441.050666a26.922883 26.922883 0 0 0 37.853573-38.284339L304.722232 536.884282a27.27288 27.27288 0 0 1-0.323074-38.445877L748.545955 46.726278A26.922883 26.922883 0 1 0 710.180847 9.00732z" />
+				</svg>
+			</a>
+		</div>
+		<div class="col-xs-8 text-center" id="search">
+			编辑收货地址
+		</div>
+		<div class="col-xs-2"><a href="#" class="inputclear">完成</a></div>
+	</section>
+	
+</header>
+<main id="main">
+	<section class="syLists addLists">
+		<div class="clear syList">
+			<div class="pull-left clear">
+				<span>收&ensp;货&ensp;人 :</span>
+			</div>
+			<div class="pull-left clear"><input type="text" name="" class="form_input"></div>
+		</div>
+		<div class="clear syList">
+			<div class="pull-left clear">
+				<span>手&ensp;机&ensp;号 :</span>
+			</div>
+			<div class="pull-left clear"><input type="text" name="" class="form_input"></div>
+		</div>
+		<div class="clear syList">
+			<div class="pull-left clear">
+				<span>省&ensp;市&ensp;区 :</span>
+			</div>
+			<div class="pull-left clear">
+				<input type="text" id="J_Address" name="" class="form_input" readonly="readonly">
+				<div class="addMap pull-right">
+					<svg class="icon" width="26px" height="26.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#ff2150" d="M674.051 396.451c0-89.518-72.57-162.086-162.09-162.086-89.518 0-162.086 72.569-162.086 162.086 0 89.521 72.569 162.088 162.086 162.088 89.519 0 162.09-72.567 162.09-162.088z m-288.159 0c0-69.624 56.443-126.069 126.069-126.069S638.03 326.826 638.03 396.451c0 69.626-56.443 126.07-126.069 126.07s-126.069-56.444-126.069-126.07z m414.227 0c0-159.144-129.013-288.155-288.158-288.155-159.143 0-288.157 129.011-288.157 288.155 0 159.145 288.157 504.276 288.157 504.276s288.158-345.131 288.158-504.276zM511.961 144.315c139.252 0 252.137 112.884 252.137 252.135 0 139.253-252.137 450.247-252.137 450.247S259.824 535.704 259.824 396.451c0-139.252 112.885-252.136 252.137-252.136z m127.375 640.966a2690.456 2690.456 0 0 1-22.977 31.055c76.901 8.857 129.729 27.188 129.729 48.369 0 29.84-104.822 54.031-234.127 54.031-129.303 0-234.125-24.191-234.125-54.031 0-21.181 52.827-39.513 129.727-48.369a2673.247 2673.247 0 0 1-22.977-31.055c-84.969 15.172-142.771 45.046-142.771 79.424 0 49.732 120.95 90.051 270.147 90.051 149.199 0 270.147-40.318 270.147-90.051-0.002-34.378-57.803-64.252-142.773-79.424z" /></svg>
+				</div>
+			</div>
+		</div>
+		<div class="clear syList">
+			<div class="pull-left clear">
+				<span>详情地址 :</span>
+			</div>
+			<div class="pull-left clear"><input type="text" name="" class="form_input"></div>
+		</div>
+		
+	</section>
+</main>
+
+<footer id="footer" class="container navbar-fixed-bottom">
+	<nav class="row text-center footerNav">
+		<script type="text/javascript">
+			$('.footerNav').load('footer.html');
+		</script>
+	</nav>
+</footer>
+</body>
+<!-- 地区选择 -->
+<script type="text/javascript" src="js/ydui.citys.js"></script>
+<script type="text/javascript" src="js/ydui.js"></script>
+<script type="text/javascript">
+	!function () {
+        var $target = $('#J_Address');
+
+        $target.citySelect();
+
+        $target.on('click', function (event) {
+            event.stopPropagation();
+            $target.citySelect('open');
+        });
+
+        $target.on('done.ydui.cityselect', function (ret) {
+        	//console.log(ret)
+            $(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();
+</script>
+</html>

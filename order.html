@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+		body{ background: #f7f7f7; padding-top: 57px; }
+	</style>
+</head>
+<body>
+<header id="header" class="container subHead">
+	<section class="classSearch row">
+		<div class="col-xs-1">
+			<div class="col-xs-1" style="padding: 9px 4px 4px;">
+				<a class="" style="display: block; width: 16px; height: 16px; line-height: 16px; margin-left: 6px;" href="javascript:history.go(-1);">
+					<svg  class="icon" width="16px" height="16.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<path fill="#2c2c2c" d="M710.153924 8.980397L266.007127 460.692524a81.118646 81.118646 0 0 0 0.861532 114.476097l446.192936 441.050666a26.922883 26.922883 0 0 0 37.853573-38.284339L304.722232 536.884282a27.27288 27.27288 0 0 1-0.323074-38.445877L748.545955 46.726278A26.922883 26.922883 0 1 0 710.180847 9.00732z" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-10 text-center" id="search">
+			我的订单
+		</div>
+	</section>
+	
+</header>
+<main id="main" class="container">
+	<section class="orderNav row">
+		<div class="col-xs-3 cur">全部(11)</div>
+		<div class="col-xs-3">待收货(3)</div>
+		<div class="col-xs-3">待评价(5)</div>
+		<div class="col-xs-3">售后(3)</div>
+		<p class="filterBar"></p>
+	</section>
+	<section class="orderLists">
+		<div class="orderList">
+			<div class="orderTop clear">
+				<div class="pull-left"><a href="#">日韩衣橱 ></a></div>
+				<div class="pull-right">已确认收货</div>
+			</div>
+			<div class="orderMiddle clear">
+				<div class="orderImg pull-left"><img src="img/shaidan.jpg" class="img-responsive"></div>
+				<div class="orderInfo pull-left">
+					<h4>秋冬款韩版低圆领中长款宽松套头打底毛衣</h4>
+					<p>颜色：白色；尺码：均码；</p>
+				</div>
+				<div class="orderJq pull-right">
+					<del>￥98.57</del>
+					<h5>￥69.00</h5>
+					<p>x1</p>
+				</div>
+			</div>
+			<div class="orderBottom">
+				<div class="orderBottomLists">
+					共一件商品，合计:<span>￥69.00</span>
+				</div>
+				<div class="orderBottomLists">
+					<a href="shaidan.html">立即评价</a>
+				</div>
+			</div>
+		</div>
+		<div class="orderList">
+			<div class="orderTop clear">
+				<div class="pull-left"><a href="#">日韩衣橱 ></a></div>
+				<div class="pull-right">已确认收货</div>
+			</div>
+			<div class="orderMiddle clear">
+				<div class="orderImg pull-left"><img src="img/shaidan.jpg" class="img-responsive"></div>
+				<div class="orderInfo pull-left">
+					<h4>秋冬款韩版低圆领中长款宽松套头打底毛衣</h4>
+					<p>颜色：白色；尺码：均码；</p>
+				</div>
+				<div class="orderJq pull-right">
+					<del>￥98.57</del>
+					<h5>￥69.00</h5>
+					<p>x1</p>
+				</div>
+			</div>
+			<div class="orderBottom">
+				<div class="orderBottomLists">
+					共一件商品，合计:<span>￥69.00</span>
+				</div>
+				<div class="orderBottomLists">
+					<a href="#" class="seewuli">查看物流</a>
+					<a href="shaidan.html">立即评价</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript">
+	$('.orderNav').tab({
+		slider : '.filterBar',
+		children : '.col-xs-3',
+		  
+	});
+</script>
+
+</html>

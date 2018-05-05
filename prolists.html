@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+		body{ background: #f7f7f7; padding-top: 107px; }
+	</style>
+</head>
+<body>
+<header id="header" class="container subHead">
+	<section class="classSearch row">
+		<div class="col-xs-1" style="padding: 6px 4px;">
+				<a class="" style="display: block; width: 16px; height: 16px; line-height: 16px; margin-left: 6px;" href="javascript:history.go(-1);">
+					<svg  class="icon" width="16px" height="16.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<path fill="#2c2c2c" d="M710.153924 8.980397L266.007127 460.692524a81.118646 81.118646 0 0 0 0.861532 114.476097l446.192936 441.050666a26.922883 26.922883 0 0 0 37.853573-38.284339L304.722232 536.884282a27.27288 27.27288 0 0 1-0.323074-38.445877L748.545955 46.726278A26.922883 26.922883 0 1 0 710.180847 9.00732z" />
+					</svg>
+				</a>
+			</div>
+		<div class="col-xs-9" id="search">
+			<form>
+				<input type="" name="" placeholder="进口生鲜今日三折起售">
+			</form>
+		</div>
+		<div class="col-xs-2"><a href="#" class="inputclear">取消</a></div>
+	</section>
+	<section class="filterPor row transition">
+		<div class="pull-left fP cur"><a href="#">综合</a></div>
+		<div class="pull-left fP"><a href="#">销量</a></div>
+		<div class="pull-left fP"><a href="#">价格</a></div>
+		<div class="pull-left fP"><a href="#">店铺</a></div>
+		<div class="pull-left fP"><a href="javascript:slide();">筛选</a></div>
+		<p class="filterBar"></p>
+	</section>
+</header>
+<main id="main" class="container">
+	<section class="filterLists row">
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+		<div class="col-xs-6 filterList">
+			<div>
+				<a href="#"><img data-original="img/pl1.jpg" class="img-responsive lazy"></a>
+				<h4 class="text-center ell">高贵塔夫绸抹胸长拖尾婚纱</h4>
+				<p><b>￥899</b>&emsp;<small><del>￥1600</del></small></p>
+			</div>
+		</div>
+	</section>
+	<section id="searchWrap">
+		<div class="sw" id="sw">
+			<div class="swBlock1">
+				<h4>配送至</h4> <span>广东佛山禅城</span>
+			</div>
+			<div class="swBlock2">
+				<h4>类别</h4>
+				<div class="swLists">
+					<span class="on">婚纱</span>
+					<span>格子衫</span>
+					<span>西装</span>
+				</div>
+			</div>
+			<div class="swBlock1">
+				<h4>价格区间(元)</h4> <div class="swinput"><input type="" name=""> - <input type="" name=""></div>
+			</div>
+			<div class="swBottom">
+				<a href="javascript:;" class="swBottomA">确&emsp;定</a>
+			</div>
+		</div>
+	</section>
+</main>
+<footer id="footer" class="container navbar-fixed-bottom">
+	<nav class="row text-center footerNav">
+		<script type="text/javascript">
+			$('.footerNav').load('footer.html');
+		</script>
+	</nav>
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript">
+	$("img.lazy").lazyload({effect: "fadeIn"});
+	tab('.swLists', 'on');
+
+	function slide(){
+		var element = $('#searchWrap');
+		var element2 = $('#sw');
+		var tl = new TimelineMax();
+
+		tl.to(element, .6, {x : 0});
+		tl.to(element2, .3, {transform : 'scale(1)'});
+		//tl.to(element, .3, {backgroundColor : 'rgba(0,0,0,.5)'});
+	}
+
+	$('#searchWrap').bind('click', function (ev){
+		var _self = ev.target;
+		if(_self.tagName.toLowerCase() == 'section' || _self.className == 'swBottomA'){
+			var element = $('#searchWrap');
+			var element2 = $('#sw');
+			var tl = new TimelineMax();
+
+			tl.to(element2, .3, {transform : 'scale(.98)'});
+			tl.to(element, .6, {x : '800'});
+			//tl.to(element, .3, {backgroundColor : 'rgba(0,0,0,.0)'});
+		}
+	})
+</script>
+<script type="text/javascript">
+	scrollDirect(function (direction){ 
+		if(direction == 'up'){
+			$('.filterPor').css('transform', 'translateY(0)');
+		}else{
+			$('.filterPor').css('transform', 'translateY(-50px)');
+		}
+	});
+
+	$('.filterPor').tab({
+		slider : '.filterBar',
+		children : '.fP',
+		callback : function (tab){
+			tab.find('a').css('color', '#f00');
+			tab.siblings().find('a').css('color', '#999');
+		}     
+	});
+</script>
+</html>
