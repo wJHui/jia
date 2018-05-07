@@ -154,5 +154,21 @@ $.fn.tab = function (settings){
 		
 	})
 
+}
 
+$.fn.del = function (settings){
+	
+	$(this).each(function (){
+		var _self = $(this);
+		_self.get(0).addEventListener('click', function (){
+		let _settings = settings,
+			_result = confirm(_settings.message);
+
+		if(!!_result){
+			let parents = _self.parents(_settings.parents);
+			parents.remove()
+		}
+	}, false);
+	});
+	
 }

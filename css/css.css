@@ -309,7 +309,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .userOne{ background: #fff;  }
 .usrLists{ border-top: 10px solid #f7f7f7;  }
 .userOne a{ font-size: 1.3rem; color: #666;}
-.usrFIco{ width: 30px; height: 30px; margin: 12px auto 6px; }
+.usrFIco{ width: 34px; height: 34px; margin: 12px auto 6px; text-align: center; line-height: 36px; }
 .usrFour{ border-bottom: 1px solid #eaeaea; }
 .uL{ border-top: 1px solid #eaeaea; padding: 0 15px; }
 .uL h3{ font-size: 1.6rem; color: #333333; line-height: 50px; margin: 0; }
@@ -334,7 +334,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .xqInfo p{ font-size: 1.4rem; margin: 0; color: #ccc; line-height: 22px; }
 
 .syList{ line-height: 36px; font-size: 1.4rem; color: #999; }
-.syIco{ display: flex;  align-items: center; justify-content: center; padding-right: 6px; width: 30px; height: 36px; }
+.syIco{ display: flex;  align-items: center; justify-content: center; padding-right: 6px; margin-right: 6px; width: 36px; height: 36px; }
 .syList{ padding: 10px; border-bottom: 1px solid #ddd;position: relative; }
 .syLists{ margin: 10px 0; border-top: 1px solid #ddd; background: #fff; }
 
@@ -441,7 +441,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .messageTab div.on{ color: #ff2150; position: relative; }
 .messageTab div.on:after{ content: ''; display: block; width: 100%; height: 2px; background: #ff2150; position: absolute; left: 0; bottom: 0; }
 
-.pFLeft{ width: 40%; }
+.pFLeft{ width: 40%; margin: 0; }
 .pFLeft div{ width: 33.3333333333333333333%; text-align: center; }
 #productFooter{ height: 50px; font-size: 1.2rem; color: #666; line-height: 18px; padding: 6px 0; }
 .pFLeft a{ color: #666; }
@@ -495,7 +495,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .swBottom a{ display: block; background: #ff2150; line-height: 40px; text-align: center; color: #fff; font-size: 1.6rem; }
 
 
-.form_input{ display: inline-block; line-height: 36px; width: 60vw; font-size: 1.4rem; border: none; background: #fff; padding:0; color: #444; }
+.form_input{ display: inline-block; line-height: 36px; width: 60vw; font-size: 1.4rem; border: none; background: transparent; padding:0; color: #444; }
 .addLists .syList > div:first-child{ width: 20%; }
 .addLists .syList > div:last-child{ width: 80%; }
 .addMap{ width: 26px; height: 26px; margin-top: 5px; margin-right: 10px; }
@@ -564,8 +564,8 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	margin: -1px 11px -1px 0;
-	width: 18px; height: 18px; border: 1.5px solid rgb(255, 33, 80); border-radius: 50%;
+	margin: -3px 11px 0 0;
+	width: 18px; height: 18px; border: 2px solid rgb(255, 66, 100); border-radius: 50%;
 }
 
 .cat-custom input[type="checkbox"],
@@ -586,25 +586,43 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 	z-index: 100;
 }
 
+.cat-custom label{ position: absolute; top: 0; left: 0; width: 6px; height: 6px; -webkit-transition:all .2s ease-in; -moz-transition:all .2s ease-in; transition:all .2s ease-in; transform: translate3d(0,0,0); display: block; top: 50%; left: 50%; margin: -3px 0 0 -3px; border-radius: 50%; }
+.cat-custom input:checked ~ label{ background: rgb(255, 66, 100);  }
 
 
-/* General SVG and path styles */
+/* 表单验证 */
 
-.cat-custom svg {
-	position: absolute;
-	width: 14px;
-	height: 14px;
-	top: 50%;
-	margin-top: -8px;
-	left: 1px;
-	pointer-events: none;
+#form label{ display: none !important; }
+/* #form .error{ animation: shake 1s;  -o-animation: shake 1s; -webkit-animation: shake 1s;  -moz-animation: shake 1s;  }
+
+@keyframes shake {
+    0%{ -webkit-transform: translateX(0); background: #fee; }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { -webkit-transform: translateX(5px);  }
+    100% { -webkit-transform: translateX(0);  }
 }
 
-.cat-custom svg path {
-	stroke: rgb(255, 33, 80);
-	stroke-width: 13px;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	fill: none;
+@-webkit-keyframes shake {
+    0% { -webkit-transform: translateX(0); border: 1px solid #000; }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { -webkit-transform: translateX(5px); }
+    100% { -webkit-transform: translateX(0); }
+}
+ */
+
+/* .animate{ animation: back 1s; -webkit-animation: back 1s;  }
+
+@keyframes back {
+    0%{ background: #fff; }
+   	50% { background: #fee; }
+   	100%{ background: #fff; }
 }
 
+@-webkit-keyframes back {
+    0%{ background: #fff; }
+   	50% { background: #fee; }
+   	100%{ background: #fff; }
+}
+  */
+
+.delete{ color: rgb(153, 153, 153); font-size: 2.2rem; margin-top: 6px; }
