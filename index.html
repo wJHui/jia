@@ -439,9 +439,15 @@
 <script type="text/javascript">
 		new Swiper('#banner', {
 			pagination: {
-		      	el: '.swiper-pagination',
-		       // dynamicBullets: true,
-		    },
+			    el: '.swiper-pagination',
+			       // dynamicBullets: true,
+			    type: 'fraction',
+	        	renderFraction: function (currentClass, totalClass) {
+		          	return '<span class="' + currentClass + '"></span>' +
+		                 '/' +
+		                 '<span class="' + totalClass + '"></span>';
+		        },
+			},
 		    autoplay: {
 		        delay: 5000,
 		        disableOnInteraction: false,
