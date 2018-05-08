@@ -28,10 +28,11 @@ input, button{ outline: none; }
 .xsqgLists{ width: 100%; overflow: hidden; }
 .xsqgList{ width: 1000%;  }
 .xsqgList > div{ width: 2.5%; }
-.xsqgList > div a{ display: block; padding: 12px 6px; }
-.xsqgList > div p{ font-size: 1.2rem; color: #666; margin-top: 10px; }
+.xsqgList > div a{ display: block; padding: 8px 6px; }
+/* .xsqgList > div a img{ border: 1px solid #eee; } */
+.xsqgList > div p{ font-size: 1.2rem; color: #666; margin: 6px 0 2px; line-height: 20px;}
 
-
+.display-none{ display: none }
 
 .ad{ padding: 10px 0; background: #f7f7f7; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 
@@ -132,11 +133,11 @@ input, button{ outline: none; }
 .dianNav b{ line-height: 26px; display: block; height: 26px; font-size: 1.8rem; font-weight: 500; color: #444; }
 .dianNav p{ font-size: 1.2rem; color: #444; margin-bottom: 0px; }
 
-.dian-info-list{ background: #fff; border-bottom: 1px solid #eee; }
+.dian-info-list{ background: #fff; /* border-bottom: 1px solid #eee; */ }
 .dian-info-list .col-xs-4{ padding-left: 0; padding-right: 6px; }
 .dian-info-list > div:not(:last-child){ border-bottom: 1px solid #eeeeee; }
 .dian-info-list > div{  padding: 6px 0; line-height: 38px; font-size: 1.3rem; }
-.dian-info-list span{ display: inline-block; text-align: center; background: #ff2150; color: #fff; font-size: 1rem; line-height: 16px; width: 16px; margin-left: 4px; vertical-align: middle; }
+.dian-info-list span{ display: inline-block; text-align: center; background: #ff2150; margin-top: -1px; color: #fff; font-size: 1rem; line-height: 16px; width: 16px; margin-left: 4px; vertical-align: middle; }
 .dian-info-list p{ font-size: 1.3rem; margin-bottom: 0; }
 
 /* 快递页 */
@@ -410,6 +411,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 #productImg{ width: 100%; overflow: hidden; position: relative; }
 #productImg .swiper-wrapper{ width: 99999px;  }
 #productImg .swiper-slide{ width: 100vw; float: left; }
+#productImg img{ display: block; }
 
 .productInfo{ background: #fff; }
 #productTitle{ padding: 8px 15px; font-size: 1.5rem; color: #333; line-height: 24px; font-weight: 400; margin: 0 0 8px 0; }
@@ -433,10 +435,11 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .productDianInfo h5{ margin: 2px 0; font-size: 1.5rem; line-height: 24px; color: #333; font-weight: bold; }
 .productDianInfo p{ margin: 2px; font-size: 1.3rem; line-height: 24px; color: #999;  }
 
-.dian-btn{ text-align: center; padding: 10px 0; }
-.dian-btn a{ display: inline-block; margin: 0 12px; line-height: 30px; font-size: 1.4rem; color: #666; padding: 0 16px; border: 1px solid #ddd; border-radius: 4px; }
+.dian-btn{ text-align: center; padding: 0 0 10px;  }
+.dian-btn a{ display: inline-block; width: 48%; line-height: 30px; font-size: 1.2rem; color: #666; border: 1px solid #ddd; border-radius: 4px; }
+.dian-btn a:first-child{ margin-right: 2%; }
 
-.messageTab{ border-bottom: 1px solid #eee;  }
+.messageTab{ border-bottom: 1px solid #eee; position: absolute; top: 0; left: 0; width: 100%; background: rgba(250,250,250,.9);  }
 .messageTab div{ width: 33.3333333333333333333333333333333333333%; float: left; text-align: center; line-height: 42px; font-size: 1.2rem; color: #999; }
 .messageTab div.on{ color: #ff2150; position: relative; }
 /* .messageTab div.on:after{ content: ''; display: block; width: 100%; height: 2px; background: #ff2150; position: absolute; left: 0; bottom: 0; }
@@ -628,11 +631,11 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .delete{ color: rgb(153, 153, 153); font-size: 2.2rem; margin-top: 6px; }
 
 
-.xqMain{ width: 100vw; height: calc(100vh - 102px); overflow: hidden; transform: translate3d(0, 51px, 0); }
+.xqMain{ width: 100vw; height: calc(100vh - 101px); overflow: hidden; transform: translate3d(0, 50px, 0); }
 
 .blockView{ width: 100vw; height: 100%; overflow-x: hidden; }
 
-.xqWrap{ transform: translate3d(0, 0, 0); /* animation: back1 1s 1s forwards; */ }
+.xqWrap{ transform: translate3d(0, 0px, 0); /* animation: back1 1s 1s forwards; */ }
 .xqXq{ /*  animation: back2 1s 1s forwards ; */ transform: translate3d(0, 0, 0); }
 
 .xqMain > div.swiper-wrapper{ width: 300%; }
