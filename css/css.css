@@ -90,7 +90,7 @@ input, button{ outline: none; }
 .fP.cur a{ color: #ff2150; }
 .filterPor .filterBar{ display: block; height: 2px; width: 20%; background: #ff2150; position: absolute; left: 0; margin: 0; bottom: 0px; }
 
-.filterLists{ margin-top: 20px; margin-bottom: 20px; }
+.filterLists{ margin-top: 10px; margin-bottom: 20px; }
 .filterList{ padding: 0 8px; margin-bottom: 8px; }
 .filterList > div{ background: #fff; padding-bottom: 6px; }
 .filterList h4{ font-size: 1.3rem; color: #333; margin: 10px 6px; }
@@ -356,14 +356,14 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .orderWrap{ border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding:0 15px; padding-bottom: 0; background: #fff; margin-top: 10px; }
 .orderDianpu{ border-bottom: 1px solid #eee; padding: 8px 0;  }
 .orderDianpu img{ max-width: 36px; }
-.orderDianpu span{ line-height: 36px; display: inline-block; margin-left: 10px; font-size: 1.6rem; color: #333; }
+.orderDianpu span{ line-height: 36px; display: inline-block; margin-left: 10px; font-size: 1.5rem; color: #333; }
 .orderWrap .orderMiddle{ padding: 10px 0; }
 .orderWrap .orderImg{ width: 50px; height: 50px; }
 .orderWrap .orderJq h5{ color: #ff2150; font-size: 1.8rem; }
 .orderWrap .orderJq{ width: calc(24% - (70px * .2)) }
 .orderWrap .orderInfo{ width: calc(76% - (70px * .8) - 20px); margin: 0 10px; }
 
-.orderother .oo{ border-top: 1px solid #eee; padding: 8px 0; line-height: 36px; font-size: 1.5rem; color: #555; }
+.orderother .oo{ border-top: 1px solid #eee; padding: 8px 0; line-height: 36px; font-size: 1.3rem; color: #555; }
 .orderother .oo.n{ border-top: none; }
 
 .yhqBtn{ padding: 10px 0 20px; }
@@ -381,7 +381,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 .catInfo{ width: calc(100% - 76px); }
 .catInfo p{ margin-bottom: 0; font-size: 1.3rem; text-align: left; line-height: 20px; }
 .spChange{ margin-top: 4px; }
-.spChange button{ width: 24px; font-weight: bold; height: 24px; text-align: center; font-size: 1.3rem; color: #6b6b6b; background: #f7f7f7; border: none; float: left; }
+.spChange button{ width: 24px; font-weight: bold; height: 24px; text-align: center; font-size: 1.3rem; color: #6b6b6b; background: #f7f7f7; border: none; float: left; line-height: 20px; }
 .spChange input{ width: 50px; height: 24px; line-height: 24px; font-size: 1.3rem; color: #6b6b6b; background: #f7f7f7; border: none; float: left; display: block; margin: 0 2px; text-align: center; }
 .reduce{ border-radius: 5px 0 0 5px; }
 .plus{ border-radius: 0 5px 5px 0; color: #ff2150 !important; }
@@ -568,7 +568,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 	display: inline-block;
 	vertical-align: middle;
 	margin: -3px 11px 0 0;
-	width: 18px; height: 18px; border: 2px solid rgb(255, 66, 100); border-radius: 50%;
+	width: 18px; height: 18px; border: 1.5px solid rgb(255, 66, 100); border-radius: 50%; overflow: hidden;
 }
 
 .cat-custom input[type="checkbox"],
@@ -589,8 +589,8 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 	z-index: 100;
 }
 
-.cat-custom label{ position: absolute; top: 0; left: 0; width: 6px; height: 6px; -webkit-transition:all .2s ease-in; -moz-transition:all .2s ease-in; transition:all .2s ease-in; transform: translate3d(0,0,0); display: block; top: 50%; left: 50%; margin: -3px 0 0 -3px; border-radius: 50%; }
-.cat-custom input:checked ~ label{ background: rgb(255, 66, 100);  }
+.cat-custom label{ position: absolute; top: 0; margin-top: -2px; color: #fff;  left: 0; width: 20px; overflow: hidden; line-height: 20px; height: 20px; -webkit-transition:all .1s ease-in; -moz-transition:all .1s ease-in; transition:all .1s ease-in; transform: translate3d(0,0,0); display: block; top: -1px; left: 0;   }
+.cat-custom input:checked ~ label{ color: rgb(255, 66, 100);  }
 
 
 /* 表单验证 */
@@ -633,7 +633,7 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
 
 .xqMain{ width: 100vw; height: calc(100vh - 101px); overflow: hidden; transform: translate3d(0, 50px, 0); }
 
-.blockView{ width: 100vw; height: 100%; overflow-x: hidden; }
+.blockView{ width: 100vw; /*height: 100%;  overflow-x: hidden; */ }
 
 .xqWrap{ transform: translate3d(0, 0px, 0); /* animation: back1 1s 1s forwards; */ }
 .xqXq{ /*  animation: back2 1s 1s forwards ; */ transform: translate3d(0, 0, 0); }
@@ -668,3 +668,39 @@ a.seewuli{ background: #fff; color: #666; border: 1px solid #dddddd; }
  .pjLevel div.on{ background: #fff; color: #f00; padding: 0 4px 0 20px; }
 
  .dropChange{ text-align: center; height: 50px; line-height: 50px; font-size: 1.3rem; background: #fafafa; color: #999; }
+
+ .messageInfo{ min-height: calc(100vh - 101px); }
+
+
+
+ /*上传图片通用样式*/
+.upload-ul{ position: relative;  display: inline-block; *display: inline; *zoom:1; width: 100%;  -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0; }
+.upload-ul li{ position: relative; float: left; display: inline-block; width: 19%; margin-left: 1.25%; padding: 0; border: none; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; overflow: hidden; }
+.upload-pick{ background: url(../img/upload-bj.png) no-repeat 0 0; }
+.upload-ul li:first-child{ margin-left: 0; }
+.upload-pick:hover{ background: url(../img/upload-bj.png) no-repeat 0 -90px; }
+.webuploader-pick{position: relative;display: inline-block;vertical-align: top; width: 100%; height: 100%;}
+.webuploader-container{ position: relative; width: 100%; height: 100%; }
+.webuploader-container label{position: absolute;left: 0;top: 0;width: 100%;}
+.webuploader-element-invisible{opacity: 0;width: 100%;height: 100%;clip: rect(1px 1px 1px 1px);clip: rect(1px,1px,1px,1px);}
+.viewThumb{ position:relative;width: 100%;height: 100%;overflow:hidden;border-radius: .3rem;}
+.viewThumb img{ width: 100%;height: 100%}
+.diyBar{ position: absolute; display:none; top: 0;left: 0;width: 100%;height: 100%;background: url(../img/bgblack.png);z-index: 3;}
+.diyProgress{ position: absolute; left: 0;top: 33px;width: 100%;height: 24px;line-height:24px;font-size: 14px;text-align: center;color: #FFF;background:rgba(10,168,241,.7); z-index: 3;}
+.diyControl{ position: absolute; display:none; left: 0;bottom: 0;width: 100%;height: 24px;line-height:24px;font-size: 14px;background: url(../img/bgblack.png); z-index: 3; }
+.viewThumb:hover .diyControl{ display: block; }
+.diyControl span{ display: inline-block; padding: 6.5px 13px; width: 12px; height: 11px; }
+.diyControl span i{ display: block; width: 12px; height: 11px; opacity: .7; }
+.diyControl span i:hover{ opacity: 1; cursor: pointer; }
+.diyLeft{ margin-left: 3px; }
+.diyLeft{ margin-right: 3px; }
+.diyLeft i{ margin-left: 3px; background: url(../img/upload-icon1.png) no-repeat 0 0; }
+.diyCancel i{ background: url(../img/upload-icon1.png) no-repeat 0 -11px; }
+.diyRight i{ margin-right: 3px; background: url(../img/upload-icon1.png) no-repeat 0 -22px; }
+
+.upload-btn{ display: inline-block; padding: 10px 50px; font: 16px/20px 'Microsoft YaHei'; background:rgba(10,168,241,.7); color: #fff; border-radius: 5px; }
+.upload-btn:hover{ background:rgba(10,168,241,1) }

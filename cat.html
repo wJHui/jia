@@ -14,13 +14,13 @@
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<style type="text/css">
-	body{ background: #f7f7f7; padding-bottom: 110px; padding-top: 60px; }
+	body{ background: #f7f7f7; padding-bottom: 110px; padding-top: 50px; }
 </style>
 </head>
 <body>
 	<header id="header" class="container subHead">
 		<section class="classSearch row">
-			<div class="col-xs-2" style="padding: 6px 4px;">
+			<div class="col-xs-2" style="padding: 5px 4px;">
 				<a class="" style="display: block; width: 16px; height: 16px; line-height: 16px; margin-left: 6px;" href="javascript:history.go(-1);">
 					<svg  class="icon" width="16px" height="16.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
 						<path fill="#2c2c2c" d="M710.153924 8.980397L266.007127 460.692524a81.118646 81.118646 0 0 0 0.861532 114.476097l446.192936 441.050666a26.922883 26.922883 0 0 0 37.853573-38.284339L304.722232 536.884282a27.27288 27.27288 0 0 1-0.323074-38.445877L748.545955 46.726278A26.922883 26.922883 0 1 0 710.180847 9.00732z" />
@@ -37,9 +37,9 @@
 		<section class="catWrap ">
 			<div class="catDian clear">
 				<div class="pull-left catDianName">
-					<div class="cat-custom">
+					<div class="cat-custom" data-sub="input-1" onclick="changeInput(event, this)">
 						<input name="cb6" type="checkbox" class="catCheckbox">
-						<label></label>
+						<label class="icon-gou5 iconfont"></label>
 					</div>
 					<a href="#">
 						皇宫婚纱旗舰店 
@@ -52,9 +52,9 @@
 			</div>
 			<div class="catLists n text-center clear">
 				<div class="catLeft">
-					<div class="cat-custom">
+					<div class="cat-custom input-1">
 						<input name="cb6" type="checkbox" class="catCheckbox">
-						<label></label>
+						<label class="icon-gou iconfont"></label>
 					</div>
 				</div>
 				<div class="catMiddle clear">
@@ -77,9 +77,76 @@
 			</div>
 			<div class="catLists text-center clear">
 				<div class="catLeft">
-					<div class="cat-custom">
+					<div class="cat-custom input-1">
 						<input name="cb6" type="checkbox" class="catCheckbox">
-						<label></label>
+						<label class="icon-gou iconfont"></label>
+					</div>
+				</div>
+				<div class="catMiddle clear">
+					<div class="pull-left catImg"><a href="#"><img src="img/d.jpg" class="img-responsive"></a></div>
+					<div class="pull-right catInfo">
+						<p class="ell">2015新款婚纱冬季新娘结婚韩版蕾...</p>
+						<p class="catC">颜色：白色；尺码：L</p>
+						<div class="spChange clear">
+							<button class="reduce">-</button>
+							<input type="text" name="" value="1" class="spInput">
+							<button class="plus">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="catRight">
+					<del>￥895</del>
+					<b>￥495.9</b>
+					<i class="svgI-20 delete iconfont icon-lajitong"></i>
+				</div>
+			</div>
+		</section>
+		<section class="catWrap ">
+			<div class="catDian clear">
+				<div class="pull-left catDianName">
+					<div class="cat-custom" data-sub="input-2" onclick="changeInput(event, this)">
+						<input name="cb6" type="checkbox" class="catCheckbox">
+						<label class="icon-gou5 iconfont"></label>
+					</div>
+					<a href="#">
+						皇宫婚纱旗舰店 
+						<i class="svgI-20 iconfont icon-jiantouyou" style="margin: 0 0 0 5px; font-size: 1.3rem; color: #333;"></i>
+					</a>
+				</div>
+				<div class="pull-right catDianQuan">
+					<i class="svgI iconfont icon-youhuiquan" style="width: 24px; color: rgb(255, 66, 100); height: 24px; font-size: 1.9rem; line-height: 26px; margin-right: 6px;"></i>
+				</div>
+			</div>
+			<div class="catLists n text-center clear">
+				<div class="catLeft">
+					<div class="cat-custom input-2">
+						<input name="cb6" type="checkbox" class="catCheckbox">
+						<label class="icon-gou iconfont"></label>
+					</div>
+				</div>
+				<div class="catMiddle clear">
+					<div class="pull-left catImg"><a href="#"><img src="img/d.jpg" class="img-responsive"></a></div>
+					<div class="pull-right catInfo">
+						<p class="ell">2015新款婚纱冬季新娘结婚韩版蕾...</p>
+						<p class="catC">颜色：白色；尺码：L</p>
+						<div class="spChange clear">
+							<button class="reduce">-</button>
+							<input type="text" name="" value="1" class="spInput">
+							<button class="plus">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="catRight">
+					<del>￥895</del>
+					<b>￥495.9</b>
+					<i class="svgI-20 delete iconfont icon-lajitong"></i>
+				</div>
+			</div>
+			<div class="catLists text-center clear">
+				<div class="catLeft">
+					<div class="cat-custom input-2">
+						<input name="cb6" type="checkbox" class="catCheckbox">
+						<label class="icon-gou iconfont"></label>
 					</div>
 				</div>
 				<div class="catMiddle clear">
@@ -106,9 +173,9 @@
 		<section class="bottomBtn catBtn clear">
 			<div class="pull-left daiButtonLeft">
 				<h5>
-					<div class="cat-custom">
+					<div class="cat-custom n" onclick="changeInput(event, this)" data-sub="cat-custom:not('.n')">
 						<input name="cb6" type="checkbox" class="catCheckbox" />
-						<label></label>
+						<label class="icon-gou iconfont"></label>
 					</div>
 					合计：<strong>￥784.80</strong>&emsp;<span>为您节省￥605.2</span>
 				</h5>
@@ -130,6 +197,30 @@
 	$('.delete').del({
 		parents : '.catLists',
 		message : '确定要删除该商品吗？'
-	})
+	});
+
+	function changeInput(ev, _self){
+		var type = ev.target.tagName.toLowerCase(),
+			_self = $(_self),
+			className = _self.data('sub'),
+			checked = _self.find('input').is(':checked'),
+			input = $('.' + className).find('input');
+
+			
+		if(type === 'input'){
+			input.each(function (){
+				inputBool(checked, $(this))
+			})	
+		}
+		
+	}
+
+	function inputBool(bool, _self){
+		if(bool){
+			if(!_self.is(':checked')) _self.click();
+		}else{
+			if(_self.is(':checked')) _self.click();
+		}
+	}
 </script>
 </html>

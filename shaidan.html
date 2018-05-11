@@ -18,7 +18,7 @@
 <body>
 <header id="header" class="container">
 	<section class="classSearch row">
-		<div class="col-xs-1" style="padding: 9px 4px 4px;">
+		<div class="col-xs-1" style="padding: 5px 4px;">
 				<a class="" style="display: block; width: 16px; height: 16px; line-height: 16px; margin-left: 6px;" href="javascript:history.go(-1);">
 					<svg  class="icon" width="16px" height="16.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
 						<path fill="#2c2c2c" d="M710.153924 8.980397L266.007127 460.692524a81.118646 81.118646 0 0 0 0.861532 114.476097l446.192936 441.050666a26.922883 26.922883 0 0 0 37.853573-38.284339L304.722232 536.884282a27.27288 27.27288 0 0 1-0.323074-38.445877L748.545955 46.726278A26.922883 26.922883 0 1 0 710.180847 9.00732z" />
@@ -43,11 +43,11 @@
 		</div>
 		<div class="shaidanRemark clear">
 			<div class="pull-left">描述相符</div>
-			<div class="pull-right">
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
+			<div class="pull-right" onclick="star(event)">
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 			</div>
 		</div>
@@ -56,46 +56,53 @@
 		<div class="shaidanContent">
 			<textarea placeholder="请输入您的评价"></textarea>
 		</div>
-		<div class="row phone">
+		<!-- <div class="row phone">
 			<div class="col-xs-2"><img src="img/phone.jpg" class="img-responsive"></div>
 			<div class="col-xs-2"><img src="img/p1.jpg" class="img-responsive"></div>
 			<div class="col-xs-2"><img src="img/p1.jpg" class="img-responsive"></div>
 			<div class="col-xs-2"><img src="img/p1.jpg" class="img-responsive"></div>
 			<div class="col-xs-2"><img src="img/p1.jpg" class="img-responsive"></div>
 			<div class="col-xs-2"><img src="img/p1.jpg" class="img-responsive"></div>
-		</div>
+		</div> -->
+		<div style="margin: 10px 0 10px 0;">
+		    <ul class="upload-ul clearfix img">
+		        <li class="upload-pick">
+		            <div class="webuploader-container clearfix" id="goodsUpload"><img src="img/p1.jpg"></div>
+		        </li>
+		    </ul>
 
+		</div>
 		<div class="start">
 			<div class="startList">
 				店铺评分
 			</div>
 			<div class="startList clear">
 				质量满意
-				<div class="pull-right">
-					<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
+				<div class="pull-right" onclick="star(event)">
+					<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				</div>
 			</div>
 			<div class="startList">
 				服务态度
-				<div class="pull-right">
-					<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
+				<div class="pull-right" onclick="star(event)">
+					<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				</div>
 			</div>
 			<div class="startList">
 				物流服务
-				<div class="pull-right">
-					<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
-				<i class="svgI-20 iconfont icon-xingxingman" style="margin-top: -2px; color: #CFCF5A"></i>
+				<div class="pull-right" onclick="star(event)">
+					<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
+				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				<i class="svgI-20 iconfont icon-xingxingkong" style="margin-top: -2px; color: #CFCF5A"></i>
 				</div>
 			</div>
@@ -106,5 +113,50 @@
 	<a href="pingjia.html">确认发表</a>
 </footer>
 </body>
+<script src="js/webuploader.min.js"></script>
+<script src="js/diyUpload.js"></script>
+<script type="text/javascript">
+	function star(ev){
+		var _self = $(ev.target),
+			_index = _self.index(),
+			parent = _self.parent();
 
+		if(ev.target.tagName.toLowerCase() == 'i'){
+			parent.children().each(function (index){
+				if(index <= _index){
+					$(this).removeClass('icon-xingxingkong').addClass('icon-xingxingman');
+				}else{
+					$(this).removeClass('icon-xingxingman').addClass('icon-xingxingkong');
+				}
+			});
+		}
+
+	}
+
+	$(function(){
+
+        //上传图片
+        var $tgaUpload = $('#goodsUpload').diyUpload({
+            url:'/uploadFilePath',
+            success:function( data ) { },
+            error:function( err ) { },
+            buttonText : '',
+            accept: {
+                title: "Images",
+                extensions: 'gif,jpg,jpeg,bmp,png'
+            },
+            thumb:{
+                width:200,
+                height:200,
+                quality:100,
+                allowMagnify:true,
+                crop:true,
+                type:"image/jpeg"
+            },
+            fileNumLimit:4
+        });
+
+
+    });
+</script>
 </html>
